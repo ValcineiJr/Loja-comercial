@@ -1,4 +1,7 @@
 import Carousel from "./components/Carousel";
+import CarouselCategories from "./components/CarouselCategories";
+import CarouselProduct from "./components/CarouselProducts";
+import { FillStartIcon, HeartIcon } from "./utils/icons";
 
 const data = {
   resources: [
@@ -71,7 +74,19 @@ export default function Page() {
       </div>
 
       <div className="2xl:container 2xl:mx-auto 2xl:px-0 py-3 px-10">
-        <Carousel title="Hoje" data={data} />
+        <Carousel title="Hoje" subTitle="Vendas Relâmpago">
+          <CarouselProduct data={data} />
+        </Carousel>
+      </div>
+      <div className="2xl:container 2xl:mx-auto 2xl:px-0 py-3 px-10">
+        <Carousel
+          title="Categorias"
+          subTitle="Busque Por Categorias"
+          gap={6}
+          hasButton={false}
+        >
+          <CarouselCategories data={data} />
+        </Carousel>
       </div>
     </div>
   );

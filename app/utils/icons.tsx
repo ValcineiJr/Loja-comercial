@@ -9,6 +9,8 @@ import {
 
 import { GoArrowRight } from "react-icons/go";
 
+import { GiSmartphone } from "react-icons/gi";
+
 export {
   IoIosHeartEmpty as HeartIcon,
   CiShoppingCart as CartIcon,
@@ -18,4 +20,5 @@ export {
   IoIosStarHalf as HalfStartIcon,
   IoIosStar as FillStartIcon,
   GoArrowRight as ArrowRightIcon,
+  GiSmartphone as PhoneIcon,
 };
